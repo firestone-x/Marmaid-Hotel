@@ -1,0 +1,314 @@
+    * {
+        box-sizing: border-box;
+    }
+    
+    body {
+        font-family: 'Segoe UI', sans-serif;
+        margin: 0;
+    }
+    
+    .page {
+        width: 100%;
+        margin: 0 auto;
+    }
+    
+    @media all and (min-width: 900px) {
+        .page {
+            max-width: 1920px;
+        }
+    }
+    
+    h1,
+    h2,
+    h3 {
+        font-weight: normal;
+        text-transform: uppercase;
+    }
+    
+    header {
+        width: 100%;
+        background: #FFF;
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 80px;
+        z-index: 9999;
+    }
+    
+    header .logo img {
+        height: 60px;
+        width: 60px;
+        border-radius: 50%;
+    }
+    
+    header .col,
+    header .container {
+        position: relative;
+        width: 100%;
+        max-height: 50%;
+        margin: 0 auto;
+        max-width: 1920px;
+        min-height: 1%;
+    }
+    
+    header .logo {
+        position: absolute;
+        left: 0;
+        top: -4px;
+    }
+    
+    header nav {
+        float: none;
+        text-align: center;
+        display: block;
+        width: 100%;
+    }
+    
+    @media all and (max-width:768px) {
+        header nav {
+            padding-right: 120px;
+        }
+    }
+    
+    header nav ul {
+        padding: 0 0;
+        list-style: none;
+        display: block;
+        height: 30px;
+    }
+    
+    header nav ul li {
+        float: none;
+        clear: none;
+        display: inline-block;
+        height: 30px;
+        line-height: 25px;
+        color: #685d57;
+    }
+    
+    header nav ul li a {
+        text-decoration: none;
+        margin-top: 2px;
+        position: relative;
+        overflow: hidden;
+        text-transform: uppercase;
+        color: #685d57;
+        margin-left: 30px;
+    }
+    
+    .banner {
+        width: 100%;
+        height: 300px;
+        background-image: url(./images/beach-1751455_1920.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        border-bottom: 20px solid #FFF;
+    }
+    
+    .banner h1,
+    .banner p {
+        text-align: center;
+        margin: 0 auto;
+        text-shadow: 0 0 4px rgba(0, 0, 0, .6), 0 0 6px rgba(0, 0, 0, .8);
+    }
+    
+    .banner h1 {
+        padding-top: 200px;
+        color: #FFF;
+        font-size: 20px;
+    }
+    
+    .banner p {
+        color: #FFF;
+        font-size: 16px;
+        padding-top: 20px;
+    }
+    
+    @media all and (min-width: 900px) {
+        .banner {
+            width: 100%;
+            height: 900px;
+            background-position: bottom;
+        }
+        .banner h1 {
+            padding-top: 620px;
+            color: #FFF;
+            font-size: 50px;
+        }
+        .banner p {
+            color: #FFF;
+            font-size: 30px;
+            padding-top: 30px;
+        }
+    }
+    
+    .line .container {
+        display: flex;
+        flex-wrap: wrap;
+        position: relative;
+        width: 100%;
+        height: 500px;
+    }
+    
+    .container {
+        border-bottom: 20px solid #FFF;
+        display: flex;
+    }
+    
+    .line .img-container {
+        display: flex;
+        flex: 3;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center bottom;
+    }
+    
+    .text {
+        display: flex;
+        flex: 1;
+    }
+    
+    .text .inner {
+        margin-top: auto;
+        margin-bottom: auto;
+        padding: 40px;
+    }
+    
+    .text .inner p {
+        line-height: 2em;
+    }
+    
+    .line_text-left .text,
+    .line_text-left-2 .text {
+        border-right: 20px solid #FFF;
+    }
+    
+    .line_text-right .text,
+    .line_text-right-2 .text {
+        border-left: 20px solid #FFF;
+    }
+    
+    .line_text-left .img-container {
+        background-image: url(./images/room-4768554_1920.jpg);
+        background-position: center;
+    }
+    
+    .line_text-right .img-container {
+        background-image: url(./images/shangri-la-entrance-326174_1920.jpg);
+        background-position: center bottom;
+    }
+    
+    .line_text-left-2 .img-container {
+        background-image: url(./images/hotel-2626098_1920.jpg);
+        background-position: center;
+    }
+    
+    .line_text-right-2 .img-container {
+        background-image: url(./images/bread-3318314_1920.jpg);
+        background-position: center;
+    }
+    
+    .button {
+        color: #FFF;
+        border: 2px solid #fff;
+        height: 44px;
+        text-transform: uppercase;
+        font-size: 18px;
+        text-decoration: none;
+        display: inline-block;
+        text-align: center;
+        padding: 10px 10px;
+        margin-top: 40px;
+    }
+    
+    a:hover {
+        background-color: #FFF;
+        color: #736357;
+    }
+    
+    .button-dark {
+        color: #736357;
+        border: 2px solid #736357;
+    }
+    
+    .text,
+    .feature-text {
+        background-color: #736357;
+        color: #fff;
+        text-align: center;
+    }
+    
+    .accommodation-banner,
+    .footer {
+        width: 100%;
+        padding: 60px 20px;
+        text-align: center;
+        margin: 0 auto;
+        background: url(./images/orange-background.jpg) center center no-repeat;
+        background-size: cover;
+        border-bottom: 20px solid #FFF;
+    }
+    
+    .accomodation-banner .button {
+        height: auto;
+        line-height: 30px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        font-size: 22px;
+        padding-left: 30px;
+        padding-right: 65px;
+    }
+    
+    .line .outdoor {
+        background-image: url(./images/spa-16900_1920.jpg);
+        background-attachment: fixed;
+        background-position: center;
+    }
+    
+    .line .pool {
+        background-image: url(./images/hotel_pool.jpg);
+        background-position: bottom;
+    }
+    
+    .line .outdoor,
+    .line .pool {
+        flex: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    
+    .feature-text {
+        flex: 1;
+        border-right: 20px solid #FFF;
+    }
+    
+    .feature-text.last {
+        border-right: none;
+    }
+    
+    .feature-text h3 {
+        font-size: 1.2em;
+        padding: 80px 0 20px 0;
+    }
+    
+    .feature-text p {
+        line-height: 1.8em;
+        padding: 0 80px;
+    }
+    
+    .line_text-left .img-container .food {
+        background-image: url(./images/bread-3318314_1920.jpg);
+    }
+    
+    .footer {
+        border: none;
+        height: 200px;
+    }
+    
+    .footer h3,
+    .footer p {
+        color: #736357;
+        font-size: 20px;
+        text-shadow: none;
+        margin: 0 auto;
+    }
